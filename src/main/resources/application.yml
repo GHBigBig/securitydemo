@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.105:3306/securitydemo
+    username: root
+    password: ceshiji
+  session:
+    store-type: redis
+
+  redis:
+    host: 192.168.0.105
+server:
+  servlet:
+    session:
+      timeout:  Pt1h #设置Session超时时间
+  port: ${PORT:8080}
